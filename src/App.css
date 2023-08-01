@@ -1,38 +1,66 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topHeading {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input_field_wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.text-field {
+  width: 250px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(80, 79, 79);
+  border-radius: 5px;
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-field_address {
+  width: 250px;
+  border-radius: 5px;
+  resize: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(68, 67, 67);
+  padding:  10px;  
+}
+
+#name_blue {
+  color: rgb(33, 149, 243);
+  font-weight: 800;
+}
+
+
+.input_field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+input:focus {
+  outline-color: rgb(70, 168, 248);
+}
+
+textarea:focus {
+  outline-color: rgb(70, 168, 248);
 }
